@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F208472F-5CE4-4498-A31D-9A7C1FDB3EC8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MonkeyUITouchDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EF0D065DCC3348E8B449C410E8944650A8F8ECAF</key>
+		<string>https://github.com/stormpig/HomeWork.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MonkeyUITouchDemo/MonkeyUITouchDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EF0D065DCC3348E8B449C410E8944650A8F8ECAF</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/stormpig/HomeWork.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EF0D065DCC3348E8B449C410E8944650A8F8ECAF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EF0D065DCC3348E8B449C410E8944650A8F8ECAF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HomeWork</string>
+		</dict>
+	</array>
+</dict>
+</plist>

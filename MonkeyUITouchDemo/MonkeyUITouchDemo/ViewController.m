@@ -7,12 +7,17 @@
 //
 
 #import "ViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface ViewController ()
+{
+    UITouch *_preTouch;
+}
 
 @property (weak, nonatomic) UIImageView *monkey;
 @property (weak, nonatomic) UIImageView *banana;
-@property (assign, nonatomic)NSInteger count;
+@property (assign, nonatomic) NSInteger count;
+@property (strong, nonatomic) AVAudioPlayer *player;
 
 @end
 
@@ -43,18 +48,44 @@
     return _banana;
 }
 
+- (AVAudioPlayer *)player
+{
+    if (_player == nil) {
+        NSURL *URL = [NSURL fileURLWithPath:@"/Users/ms/Desktop/HomeWork/MonkeyUITouchDemo/MonkeyUITouchDemo/Resources/tickleSound.wav"];
+        _player = [[AVAudioPlayer alloc] initWithContentsOfURL:URL error:nil];
+    }
+    return _player;
+}
+
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    NSLog(@"touchesBegan");
     UITouch  *touch = touches.anyObject;
+    NSTimeInterval delaytime = 0.5;// 自己根据需要调整
+    
+    switch (touch.tapCount) {
+        case 1:
+            [self performSelector:@selector(singleTap:) withObject:touch afterDelay:delaytime];
+            _preTouch = touch;
+            break;
+        case 2:
+            [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(singleTap:) object:_preTouch];
+            [self performSelector:@selector(doubleTap:) withObject:touch afterDelay:delaytime];
+            break;
+        default:
+            break;
+    }
+}
+
+- (void)singleTap:(UITouch *)touch
+{
     CGPoint center = [touch locationInView:self.view];
     self.monkey.center = center;
-    
-    
-    
-    NSLog(@"MonkeyFrame:%@", NSStringFromCGRect(self.monkey.frame));
-    NSLog(@"MonkeyCenter:%@", NSStringFromCGPoint(self.monkey.center));
-    NSLog(@"self.view.center:%@", NSStringFromCGPoint(self.view.center));
+}
+
+- (void)doubleTap:(UITouch *)touch
+{
+//    [self.player play];
+    self.view.backgroundColor = [[UIColor alloc] initWithRed:(float)(arc4random() % 256 / 255.0f) green:(float)(arc4random() % 256 / 255.0f) blue:(float)(arc4random() % 256 / 255.0f) alpha:0.8];
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
@@ -105,6 +136,7 @@
     
     if (CGRectIntersectsRect(self.monkey.frame, self.banana.frame)) {
         self.count++;
+        [self.player play];
         self.title = [NSString stringWithFormat:@"%ld", self.count];
         self.banana.center = CGPointMake(self.view.frame.size.width * (arc4random() % 10) / 10, self.view.frame.size.height * (arc4random() % 10) / 10);
     }
