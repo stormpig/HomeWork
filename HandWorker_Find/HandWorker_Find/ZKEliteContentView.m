@@ -75,11 +75,9 @@
 {
     self = [super initWithFrame:CGRectMake(0, 0, 375, 667)];
     if (self) {
-//        [self preSetting];
         self.collectionView.dataSource = self;
         self.collectionView.delegate = self;
         
-        [self requestData];
     }
     return self;
 }
@@ -104,77 +102,6 @@
 - (NSArray *)sectionTitle
 {
     return @[@"头视图",@"互动课堂", @"限时抢购", @"达人推荐", @"手工专题", @"热门教程",@"其他"];
-}
-
-#pragma mark - 请求网络数据
-
-- (void)requestData
-{
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-    [manager GET:URL1 parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
-        [dict writeToFile:@"/Users/ms/Desktop/ZKEliteController.plist" atomically:YES];
-        self.data = dict[@"data"];
-        
-        NSMutableArray *temp = [NSMutableArray new];
-        for (NSDictionary *dict in self.data[@"slide"]) {
-            ZKSlide *slide = [ZKSlide baseWithDict:dict];
-            [temp addObject:slide];
-        }
-        self.slides = temp;
-        
-        temp = [NSMutableArray new];
-        for (NSDictionary *dict in self.data[@"nav"]) {
-            ZKNav *slide = [ZKNav baseWithDict:dict];
-            [temp addObject:slide];
-        }
-        self.navs = temp;
-        
-        temp = [NSMutableArray new];
-        for (NSDictionary *dict in self.data[@"adv"]) {
-            ZKAdv *adv = [ZKAdv baseWithDict:dict];
-            [temp addObject:adv];
-        }
-        self.advs = temp;
-        
-        temp = [NSMutableArray new];
-        for (NSDictionary *dict in self.data[@"classs"]) {
-            ZKClass *classN = [ZKClass baseWithDict:dict];
-            [temp addObject:classN];
-        }
-        self.classNes = temp;
-        
-        temp = [NSMutableArray new];
-        for (NSDictionary *dict in self.data[@"products"]) {
-            ZKClass *product = [ZKClass baseWithDict:dict];
-            [temp addObject:product];
-        }
-        self.products = temp;
-        
-        self.daren = [ZKDaren baseWithDict:self.data[@"daren"]];
-        
-        temp = [NSMutableArray new];
-        for (NSDictionary *dict in self.data[@"topic"]) {
-            ZKTopic *topic = [ZKTopic baseWithDict:dict];
-            [temp addObject:topic];
-        }
-        self.topices = temp;
-        
-        temp = [NSMutableArray new];
-        for (NSDictionary *dict in self.data[@"course"]) {
-            ZKCourse *course = [ZKCourse baseWithDict:dict];
-            [temp addObject:course];
-        }
-        self.courses = temp;
-        
-        [self.collectionView reloadData];
-        
-        [self.collectionView.header endRefreshing];
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error)
-     {
-         NSLog(@"网络请求失败");
-     }];
 }
 
 #pragma mark 协议方法UICollectionViewDataSource
@@ -279,16 +206,6 @@
     }
     return CGSizeMake(375, 35);
     //    return CGSizeZero;
-}
-
-#pragma mark - 其他
-
-- (void)preSetting
-{
-    // 下拉刷新
-    self.collectionView.header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        [self requestData];
-    }];
 }
 
 @end

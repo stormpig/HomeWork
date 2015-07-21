@@ -72,6 +72,9 @@
 {
     if (_sliderScrollView == nil) {
         UIScrollView * view = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 375, 150)];
+        view.pagingEnabled = YES;
+        view.showsHorizontalScrollIndicator = NO;
+        view.showsVerticalScrollIndicator = NO;
         [self addSubview:view];
         _sliderScrollView = view;
     }
