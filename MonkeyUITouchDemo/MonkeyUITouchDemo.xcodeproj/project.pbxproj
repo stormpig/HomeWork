@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4ECD3DDB1B5DD6D400B60D93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECD3DDA1B5DD6D400B60D93 /* main.m */; };
+		4ECD3DDE1B5DD6D400B60D93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECD3DDD1B5DD6D400B60D93 /* AppDelegate.m */; };
+		4ECD3DE11B5DD6D400B60D93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECD3DE01B5DD6D400B60D93 /* ViewController.m */; };
+		4ECD3DE61B5DD6D400B60D93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ECD3DE51B5DD6D400B60D93 /* Images.xcassets */; };
+		4ECD3DE91B5DD6D400B60D93 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ECD3DE71B5DD6D400B60D93 /* LaunchScreen.xib */; };
+		4ECD3DF51B5DD6D400B60D93 /* MonkeyUITouchDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECD3DF41B5DD6D400B60D93 /* MonkeyUITouchDemoTests.m */; };
+		4ECD3E091B5DD82E00B60D93 /* banana@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECD3DFF1B5DD82E00B60D93 /* banana@2x.png */; };
+		4ECD3E0A1B5DD82E00B60D93 /* blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECD3E001B5DD82E00B60D93 /* blue@2x.png */; };
+		4ECD3E0B1B5DD82E00B60D93 /* chomp.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4ECD3E011B5DD82E00B60D93 /* chomp.wav */; };
+		4ECD3E0C1B5DD82E00B60D93 /* monkey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECD3E021B5DD82E00B60D93 /* monkey@2x.png */; };
+		4ECD3E0D1B5DD82E00B60D93 /* pigEyeOpen0.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECD3E031B5DD82E00B60D93 /* pigEyeOpen0.png */; };
+		4ECD3E0E1B5DD82E00B60D93 /* pigEyeOpen1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECD3E041B5DD82E00B60D93 /* pigEyeOpen1.png */; };
+		4ECD3E0F1B5DD82E00B60D93 /* queen.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECD3E051B5DD82E00B60D93 /* queen.png */; };
+		4ECD3E101B5DD82E00B60D93 /* red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECD3E061B5DD82E00B60D93 /* red@2x.png */; };
+		4ECD3E111B5DD82E00B60D93 /* tickleSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4ECD3E071B5DD82E00B60D93 /* tickleSound.wav */; };
+		4ECD3E121B5DD82E00B60D93 /* yellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECD3E081B5DD82E00B60D93 /* yellow@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4ECD3DEF1B5DD6D400B60D93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4ECD3DCD1B5DD6D400B60D93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4ECD3DD41B5DD6D400B60D93;
+			remoteInfo = MonkeyUITouchDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4ECD3DD51B5DD6D400B60D93 /* MonkeyUITouchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonkeyUITouchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ECD3DD91B5DD6D400B60D93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4ECD3DDA1B5DD6D400B60D93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4ECD3DDC1B5DD6D400B60D93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4ECD3DDD1B5DD6D400B60D93 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4ECD3DDF1B5DD6D400B60D93 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4ECD3DE01B5DD6D400B60D93 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4ECD3DE51B5DD6D400B60D93 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4ECD3DE81B5DD6D400B60D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4ECD3DEE1B5DD6D400B60D93 /* MonkeyUITouchDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonkeyUITouchDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ECD3DF31B5DD6D400B60D93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4ECD3DF41B5DD6D400B60D93 /* MonkeyUITouchDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MonkeyUITouchDemoTests.m; sourceTree = "<group>"; };
+		4ECD3DFF1B5DD82E00B60D93 /* banana@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banana@2x.png"; sourceTree = "<group>"; };
+		4ECD3E001B5DD82E00B60D93 /* blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue@2x.png"; sourceTree = "<group>"; };
+		4ECD3E011B5DD82E00B60D93 /* chomp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chomp.wav; sourceTree = "<group>"; };
+		4ECD3E021B5DD82E00B60D93 /* monkey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "monkey@2x.png"; sourceTree = "<group>"; };
+		4ECD3E031B5DD82E00B60D93 /* pigEyeOpen0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pigEyeOpen0.png; sourceTree = "<group>"; };
+		4ECD3E041B5DD82E00B60D93 /* pigEyeOpen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pigEyeOpen1.png; sourceTree = "<group>"; };
+		4ECD3E051B5DD82E00B60D93 /* queen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = queen.png; sourceTree = "<group>"; };
+		4ECD3E061B5DD82E00B60D93 /* red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red@2x.png"; sourceTree = "<group>"; };
+		4ECD3E071B5DD82E00B60D93 /* tickleSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tickleSound.wav; sourceTree = "<group>"; };
+		4ECD3E081B5DD82E00B60D93 /* yellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yellow@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4ECD3DD21B5DD6D400B60D93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ECD3DEB1B5DD6D400B60D93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4ECD3DCC1B5DD6D400B60D93 = {
+			isa = PBXGroup;
+			children = (
+				4ECD3DD71B5DD6D400B60D93 /* MonkeyUITouchDemo */,
+				4ECD3DF11B5DD6D400B60D93 /* MonkeyUITouchDemoTests */,
+				4ECD3DD61B5DD6D400B60D93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4ECD3DD61B5DD6D400B60D93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4ECD3DD51B5DD6D400B60D93 /* MonkeyUITouchDemo.app */,
+				4ECD3DEE1B5DD6D400B60D93 /* MonkeyUITouchDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4ECD3DD71B5DD6D400B60D93 /* MonkeyUITouchDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4ECD3DFE1B5DD82E00B60D93 /* Resources */,
+				4ECD3DDC1B5DD6D400B60D93 /* AppDelegate.h */,
+				4ECD3DDD1B5DD6D400B60D93 /* AppDelegate.m */,
+				4ECD3DDF1B5DD6D400B60D93 /* ViewController.h */,
+				4ECD3DE01B5DD6D400B60D93 /* ViewController.m */,
+				4ECD3DE51B5DD6D400B60D93 /* Images.xcassets */,
+				4ECD3DE71B5DD6D400B60D93 /* LaunchScreen.xib */,
+				4ECD3DD81B5DD6D400B60D93 /* Supporting Files */,
+			);
+			path = MonkeyUITouchDemo;
+			sourceTree = "<group>";
+		};
+		4ECD3DD81B5DD6D400B60D93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4ECD3DD91B5DD6D400B60D93 /* Info.plist */,
+				4ECD3DDA1B5DD6D400B60D93 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4ECD3DF11B5DD6D400B60D93 /* MonkeyUITouchDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				4ECD3DF41B5DD6D400B60D93 /* MonkeyUITouchDemoTests.m */,
+				4ECD3DF21B5DD6D400B60D93 /* Supporting Files */,
+			);
+			path = MonkeyUITouchDemoTests;
+			sourceTree = "<group>";
+		};
+		4ECD3DF21B5DD6D400B60D93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4ECD3DF31B5DD6D400B60D93 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4ECD3DFE1B5DD82E00B60D93 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4ECD3DFF1B5DD82E00B60D93 /* banana@2x.png */,
+				4ECD3E001B5DD82E00B60D93 /* blue@2x.png */,
+				4ECD3E011B5DD82E00B60D93 /* chomp.wav */,
+				4ECD3E021B5DD82E00B60D93 /* monkey@2x.png */,
+				4ECD3E031B5DD82E00B60D93 /* pigEyeOpen0.png */,
+				4ECD3E041B5DD82E00B60D93 /* pigEyeOpen1.png */,
+				4ECD3E051B5DD82E00B60D93 /* queen.png */,
+				4ECD3E061B5DD82E00B60D93 /* red@2x.png */,
+				4ECD3E071B5DD82E00B60D93 /* tickleSound.wav */,
+				4ECD3E081B5DD82E00B60D93 /* yellow@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4ECD3DD41B5DD6D400B60D93 /* MonkeyUITouchDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ECD3DF81B5DD6D400B60D93 /* Build configuration list for PBXNativeTarget "MonkeyUITouchDemo" */;
+			buildPhases = (
+				4ECD3DD11B5DD6D400B60D93 /* Sources */,
+				4ECD3DD21B5DD6D400B60D93 /* Frameworks */,
+				4ECD3DD31B5DD6D400B60D93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MonkeyUITouchDemo;
+			productName = MonkeyUITouchDemo;
+			productReference = 4ECD3DD51B5DD6D400B60D93 /* MonkeyUITouchDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4ECD3DED1B5DD6D400B60D93 /* MonkeyUITouchDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ECD3DFB1B5DD6D400B60D93 /* Build configuration list for PBXNativeTarget "MonkeyUITouchDemoTests" */;
+			buildPhases = (
+				4ECD3DEA1B5DD6D400B60D93 /* Sources */,
+				4ECD3DEB1B5DD6D400B60D93 /* Frameworks */,
+				4ECD3DEC1B5DD6D400B60D93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4ECD3DF01B5DD6D400B60D93 /* PBXTargetDependency */,
+			);
+			name = MonkeyUITouchDemoTests;
+			productName = MonkeyUITouchDemoTests;
+			productReference = 4ECD3DEE1B5DD6D400B60D93 /* MonkeyUITouchDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4ECD3DCD1B5DD6D400B60D93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "曾凯";
+				TargetAttributes = {
+					4ECD3DD41B5DD6D400B60D93 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					4ECD3DED1B5DD6D400B60D93 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 4ECD3DD41B5DD6D400B60D93;
+					};
+				};
+			};
+			buildConfigurationList = 4ECD3DD01B5DD6D400B60D93 /* Build configuration list for PBXProject "MonkeyUITouchDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4ECD3DCC1B5DD6D400B60D93;
+			productRefGroup = 4ECD3DD61B5DD6D400B60D93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4ECD3DD41B5DD6D400B60D93 /* MonkeyUITouchDemo */,
+				4ECD3DED1B5DD6D400B60D93 /* MonkeyUITouchDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4ECD3DD31B5DD6D400B60D93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ECD3E101B5DD82E00B60D93 /* red@2x.png in Resources */,
+				4ECD3E0E1B5DD82E00B60D93 /* pigEyeOpen1.png in Resources */,
+				4ECD3E121B5DD82E00B60D93 /* yellow@2x.png in Resources */,
+				4ECD3E111B5DD82E00B60D93 /* tickleSound.wav in Resources */,
+				4ECD3E0A1B5DD82E00B60D93 /* blue@2x.png in Resources */,
+				4ECD3E0C1B5DD82E00B60D93 /* monkey@2x.png in Resources */,
+				4ECD3E091B5DD82E00B60D93 /* banana@2x.png in Resources */,
+				4ECD3E0B1B5DD82E00B60D93 /* chomp.wav in Resources */,
+				4ECD3E0F1B5DD82E00B60D93 /* queen.png in Resources */,
+				4ECD3E0D1B5DD82E00B60D93 /* pigEyeOpen0.png in Resources */,
+				4ECD3DE91B5DD6D400B60D93 /* LaunchScreen.xib in Resources */,
+				4ECD3DE61B5DD6D400B60D93 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ECD3DEC1B5DD6D400B60D93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4ECD3DD11B5DD6D400B60D93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ECD3DE11B5DD6D400B60D93 /* ViewController.m in Sources */,
+				4ECD3DDE1B5DD6D400B60D93 /* AppDelegate.m in Sources */,
+				4ECD3DDB1B5DD6D400B60D93 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ECD3DEA1B5DD6D400B60D93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ECD3DF51B5DD6D400B60D93 /* MonkeyUITouchDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4ECD3DF01B5DD6D400B60D93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4ECD3DD41B5DD6D400B60D93 /* MonkeyUITouchDemo */;
+			targetProxy = 4ECD3DEF1B5DD6D400B60D93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4ECD3DE71B5DD6D400B60D93 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4ECD3DE81B5DD6D400B60D93 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4ECD3DF61B5DD6D400B60D93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4ECD3DF71B5DD6D400B60D93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4ECD3DF91B5DD6D400B60D93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MonkeyUITouchDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4ECD3DFA1B5DD6D400B60D93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MonkeyUITouchDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4ECD3DFC1B5DD6D400B60D93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MonkeyUITouchDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MonkeyUITouchDemo.app/MonkeyUITouchDemo";
+			};
+			name = Debug;
+		};
+		4ECD3DFD1B5DD6D400B60D93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MonkeyUITouchDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MonkeyUITouchDemo.app/MonkeyUITouchDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4ECD3DD01B5DD6D400B60D93 /* Build configuration list for PBXProject "MonkeyUITouchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ECD3DF61B5DD6D400B60D93 /* Debug */,
+				4ECD3DF71B5DD6D400B60D93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ECD3DF81B5DD6D400B60D93 /* Build configuration list for PBXNativeTarget "MonkeyUITouchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ECD3DF91B5DD6D400B60D93 /* Debug */,
+				4ECD3DFA1B5DD6D400B60D93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4ECD3DFB1B5DD6D400B60D93 /* Build configuration list for PBXNativeTarget "MonkeyUITouchDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ECD3DFC1B5DD6D400B60D93 /* Debug */,
+				4ECD3DFD1B5DD6D400B60D93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4ECD3DCD1B5DD6D400B60D93 /* Project object */;
+}
